@@ -21,7 +21,6 @@ import useLoja from '../../hook/useLoja';
 function EdicaoPerfil() {
   const classes = useStyles();
   const history = useHistory();
-  const [empty, setEmpty] = useState([]);
   const { token } = useAuth();
   const { atualizar } = useLoja();
   const { handleSubmit, register } = useForm();

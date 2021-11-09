@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import { 
   Divider, 
   Typography, 
@@ -12,7 +12,6 @@ import {
 import useStyles from './styles';
 import { useHistory } from 'react-router';
 import { Link } from 'react-router-dom';
-import InputSenha from '../../components/InputSenha';
 
 import { useForm } from 'react-hook-form';
 import Alert from '@material-ui/lab/Alert';
@@ -27,7 +26,6 @@ function EdicaoProduto() {
   const { token } = useAuth();
   const [erro, setErro] = useState('');
   const [carregando, setCarregando] = useState(false);
-  const [old, setOld] = useState([]);
 
   async function onSubmit(data) {
     try {

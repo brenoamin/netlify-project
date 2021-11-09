@@ -16,7 +16,6 @@ import { useForm } from 'react-hook-form';
 import Alert from '@material-ui/lab/Alert';
 import { post } from '../../services/ApiClient';
 import useAuth from '../../hook/useAuth';
-import Main from '../../components/Main';
 
 function NovoProduto() {
   const classes = useStyles();
@@ -25,7 +24,6 @@ function NovoProduto() {
   const { register, handleSubmit } = useForm();
   const [erro, setErro] = useState('');
   const [carregando, setCarregando] = useState(false);
-  const [test, setTest] = useState([]);
 
   console.log("Test");
 

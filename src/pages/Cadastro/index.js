@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import { 
   Card, 
   CardContent, 
@@ -23,7 +23,6 @@ function Cadastro() {
   const history = useHistory();
   const [erro, setErro] = useState('');
   const [carregando, setCarregando] = useState(false);
-  const test = "";
 
   async function onSubmit(data) {
     if (data.senha !== data.senhaRepetida) {
